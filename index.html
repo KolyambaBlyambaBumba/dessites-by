@@ -10,13 +10,28 @@
         <header>
             <div class="header">
                 <a href="/" class="header-logo">
-                    <img src="hexagon_logo.png" alt="LOGO">
+                    <img src="images/hexagon_logo.png" alt="LOGO">
                 </a>
                 <nav class="header-nav">
-                    <ul>
+                    <ul class="sub-menu">
                         <li><a href="/">Главная</a></li>
-                        <li><a href="/production">Продукция</a></li>
-                        <li><a href="about">О компании</a></li>
+                        <li class="sub-menu__item"><a href="/production">Продукция
+                        </a>
+                            <ul class="sub-menu dropdown-content">
+                                <li>Панели 1</li>
+                                <li>Панели 2</li>
+                                <li>Панели 3</li>
+                                <li>Панели 4</li>
+                                <li>Панели 5</li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu__item"><a href="about">О компании</a>
+                            <ul class="sub-menu dropdown-content">
+                                <li>О компании 1</li>
+                                <li>О компании 2</li>
+                                <li>О компании 3</li>
+                            </ul>
+                        </li>
                         <li><a href="news">Новости</a></li>
                         <li><a href="contacts">Контакты</a></li>
                     </ul>
@@ -24,7 +39,14 @@
                 <div class="header-contact">
                     <div class="contact-phones">
                         <a href="tel:+375291234567">+375 (29) 123-45-67</a>
-                        <a href="tel:+375441234567">+375 (44) 123-45-67</a>
+                        <div class="contact-apps">
+                            <a href="viber://chat?number=%2B375291234567">
+                                <i class="icon-header icon-viber"></i>
+                            </a>
+                            <a href="https://wa.me/+375291234567">
+                                <i class="icon-header icon-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="contact-mail">
                         <a href="mailto:mail@example.com">mail@example.com</a>
