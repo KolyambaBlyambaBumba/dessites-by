@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/style-form.css">
+    <link rel="stylesheet" href="/assets/itc-slider.css">
+    <script src="/assets/itc-slider.min.js" defer></script>
     <title>example.com</title>
 </head>
 <body>
-    <div>
+    <div id="app">
+
         <header>
             <div class="header">
                 <a href="/" class="header-logo">
@@ -18,11 +22,11 @@
                         <li class="sub-menu__item"><a href="/production">Продукция
                         </a>
                             <ul class="sub-menu dropdown-content">
-                                <li>Панели 1</li>
-                                <li>Панели 2</li>
-                                <li>Панели 3</li>
-                                <li>Панели 4</li>
-                                <li>Панели 5</li>
+                                <li>Изделие 1</li>
+                                <li>Изделие 2</li>
+                                <li>Изделие 3</li>
+                                <li>Изделие 4</li>
+                                <li>Изделие 5</li>
                             </ul>
                         </li>
                         <li class="sub-menu__item"><a href="about">О компании</a>
@@ -54,6 +58,136 @@
                 </div>
             </div>
         </header>
+
+        <main>
+            <div class="main-banner">
+                <div class="itc-slider" data-slider="itc-slider" data-swipe="false" data-loop="true" data-autoplay="true" data-interval="6000">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <div class="slide-content-left">
+                                    <span class="slide-span">Панели из сотового картона</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam aperiam atque corporis, debitis deleniti doloribus eligendi eos excepturi facere harum id impedit labore maxime officia, pariatur quam reiciendis sapiente soluta tempore temporibus unde voluptate! Dolor quaerat tenetur unde!</p>
+                                    <div class="eco-container">
+                                        <img src="icons/earth.svg" alt="">
+                                        <img src="icons/leaves-leaf.svg" alt="">
+                                        <img src="icons/recycle-bin-trash.svg" alt="">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="/production" class="button slide-button">Узнать подробнее</a>
+                                        <p>или</p>
+                                        <a href="#form1">
+                                            <button class="button slide-button button-origin">Написать нам</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-content-right">
+                                    <img src="images/i1.png" alt="" class="slide-image">
+                                    <span class="slide-span-cost">от 00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item">
+                                <div class="slide-content-left">
+                                    <span class="slide-span">Упаковочные изделия из сотового картона</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque dolor dolores eaque magnam minima nostrum quo! Adipisci cumque dicta, dignissimos dolorum ea eaque, explicabo in molestias necessitatibus non officiis quisquam repellendus ut. Aliquid corporis distinctio error esse fugit porro quaerat sit!</p>
+                                    <div class="eco-container">
+                                        <img src="icons/earth.svg" alt="">
+                                        <img src="icons/leaves-leaf.svg" alt="">
+                                        <img src="icons/recycle-bin-trash.svg" alt="">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="/production" class="button slide-button">Узнать подробнее</a>
+                                        <p>или</p>
+                                        <a href="#form1">
+                                            <button class="button slide-button button-origin">Написать нам</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-content-right">
+                                    <img src="images/i3.png" alt="" class="slide-image">
+                                    <span class="slide-span-cost">от 00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item">
+                                <div class="slide-content-left">
+                                    <span class="slide-span">Поддоны из сотового картона</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum explicabo neque obcaecati sit. Consequatur consequuntur cum debitis non nulla sed voluptatibus. Assumenda, cum dolor doloremque dolores magni ratione ut. Aut facere laudantium non voluptatibus.</p>
+                                    <div class="eco-container">
+                                        <img src="icons/earth.svg" alt="">
+                                        <img src="icons/leaves-leaf.svg" alt="">
+                                        <img src="icons/recycle-bin-trash.svg" alt="">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="/production" class="button slide-button">Узнать подробнее</a>
+                                        <p>или</p>
+                                        <a href="#form1">
+                                            <button class="button slide-button button-origin">Написать нам</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-content-right">
+                                    <img src="images/i2.png" alt="" class="slide-image">
+                                    <span class="slide-span-cost">от 00 BYN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                    <ol class="itc-slider-indicators">
+                        <li class="itc-slider-indicator" data-slide-to="0"></li>
+                        <li class="itc-slider-indicator" data-slide-to="1"></li>
+                        <li class="itc-slider-indicator" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+            <a href="#x" class="overlay" id="form1"></a>
+            <form class="modal">
+                <label for="name">Имя:</label>
+                <input name="name" id="name" class="name" required />
+                <label for="email">E-mail:</label>
+                <input name="emailaddress" id="email" class="email" type="email" required />
+                <label for="phone">Телефон:</label>
+                <input name="phone" id="phone" class="phone" required />
+                <label for="message">Ваше сообщение:</label>
+                <textarea rows="4" cols="50" name="subject" id="message" class="message" required></textarea>
+                <div class="checkbox-confirm">
+                    <input type="checkbox" name="confirm" value="1">
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <input name="submit" class="button form-button" type="submit" value="Отправить" />
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="contact-info">
+                    <div>
+                        <p>Адрес:</p>
+                        <p>000000, Республика Беларусь, <br>г. Витебск, пр-т Московский 0</p>
+                    </div>
+                    <div>
+                        <p>Режим работы:</p>
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                        <p>Сб-Вс: Выходной</p>
+                    </div>
+                    <div class="contacts">
+                        <p>Контакты:</p>
+                        <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+                        <a href="tel:+375441234567">+375 (44) 123-45-67</a>
+                        <a href="mailto:mail@example.com">mail@example.com</a>
+                    </div>
+                </div>
+
+                <div class="credits">
+                    <p>2023 © Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
 </body>
 </html>
